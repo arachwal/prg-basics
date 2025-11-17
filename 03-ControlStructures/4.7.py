@@ -3,9 +3,9 @@
 #
 sum = 0
 
-for i n range(10):
-    if not i%2...:
+for i in range(10):
+    if not i%2 == 0:
         continue
-    sum += ...
+    sum += i
 
-print('Sum of even numbers in the range <1,10> is ...')
+print(f'Sum of even numbers in the range <1,10> is {sum}')

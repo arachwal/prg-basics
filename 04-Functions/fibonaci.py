@@ -1,0 +1,7 @@
+def f(n):
+    vals=[0,1]
+    for i in range(2,n+1):
+        vals.append(vals[i-1]+vals[i-2])
+    return vals[-1]
+n=8
+print(f(n))

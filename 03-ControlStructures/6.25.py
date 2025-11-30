@@ -15,4 +15,4 @@ Write a program that creates the following pattern. Sample result:
 number=9
 
 for i in range(1,number+1):
-    print(f"{i} "*i)
+    print(f"{i}"*i)

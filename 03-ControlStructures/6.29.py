@@ -6,6 +6,19 @@ Using loop statements check that the number N is divisible only by 1 and by N.
 Prime numbers: 2 3 5 7 11 ...
 '''
 
-n=input('podaj ilosc liczb pierwszych: ')
+n=int(input('podaj ilosc liczb pierwszych: '))
+number=2
+found=0
+primes=[]
 
+while found<=n:
+    for i in range(2, int(number)):
+        if number%i==0:
+            break
+    else:
+        primes.append(number)
+        found+=1
+    number+=1
+
+print(primes)
 

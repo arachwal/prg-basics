@@ -5,6 +5,8 @@ Sample result:
 
 0 1 1 2 3 5 8 13 21 34 ...
 '''
+
+'''
 a = 0  # Represents F(n-2), the second to last term
 b = 1  # Represents F(n-1), the last term
 
@@ -23,6 +25,16 @@ for i in range(2, 20):
     temp=b
     a=temp
     b=next_term
+'''
+
+def f(n):
+    vals=[0,1]
+    for i in range (2, n+1):
+        vals.append(vals[-1]+vals[-2])
+    return vals
+    
+
+print(f(20))
     
         
         

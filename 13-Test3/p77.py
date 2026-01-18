@@ -8,7 +8,7 @@ def f(files):
 
 print(f(files))'''
 
-# z drugiej gr zadanie sortowanie alfabetycznie formatu pliku:
+# z drugiej gr zadanie sortowanie alfabetycznie formatu pliku: x
 
 def f(files):
     return sorted(

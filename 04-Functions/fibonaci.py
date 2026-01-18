@@ -3,5 +3,5 @@ def f(n):
     for i in range(2,n+1):
         vals.append(vals[i-1]+vals[i-2])
     return vals[-1]
-n=8
+n=50
 print(f(n))

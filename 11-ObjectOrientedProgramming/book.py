@@ -6,6 +6,10 @@ class Book():
         self.pages = pages
         self.current_page = 1
         self.is_open = False
+        self.price=48
+
+    def price_change(self,price):
+        self.price=price
 
     def open(self):
         self.is_open = True
@@ -24,6 +28,7 @@ class Book():
             print(f"I am just reading the book, page {self.current_page}.")
         else:
             print("I am going to read the book later.")
+        print(f"the book is {self.price} dollars")
 
 
 def main():
@@ -34,9 +39,13 @@ def main():
 
     # object manipulation
     favourite_book.open()
+    favourite_book.price_change(50)
     favourite_book.change_page(15)
     favourite_book.display_info()
     favourite_book.close()
+    favourite_book
 
 if __name__ =="__main__":
     main()
+
+#i also made a line to be able to change the price with a function
